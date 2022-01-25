@@ -81,3 +81,33 @@ a.nav-button:hover {
         padding: 0.7rem;
     }
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    width: 80%;
+    max-width: 3072px;
+}
+
+.image-container {
+    display: flex;
+    width: 50%;
+    margin-top: 1rem;
+    padding-right:2rem;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2rem;
+}

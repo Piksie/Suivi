@@ -6,12 +6,19 @@ html, body {
      font-size: 14px;
 }
 
-.header-container {
+#header-container {
     display: flex;
     justify-content: center;
-    background-color: #26A69A;
+    position: fixed;
+    /* background-color: #26A69A; */
     width: 100%;
     height: 5rem;
+    transition: 0.5s ease-out;
+}
+
+.header-scroll {
+    background-color: #26A69A;
+    transition: 0.5s ease-in;
 }
 
 .header-main-content {
@@ -89,16 +96,14 @@ main {
 }
 
 .main-container {
-    display: flex;
-    width: 80%;
-    max-width: 3072px;
+    width: 100%;
+    max-width: 3840px;
 }
 
+/* 3072px body margin; */
+
 .image-container {
-    display: flex;
-    width: 50%;
-    margin-top: 1rem;
-    padding-right:2rem;
+    width: 100%;
 }
 
 .main-image {

@@ -71,7 +71,7 @@ a.nav-button {
 }
 
 a.nav-button:hover {
-    background-color: #00796B;
+    background-color: #00796B
 }
 
 .nav-mobile {
@@ -87,6 +87,10 @@ a.nav-button:hover {
         display: flex;
         padding: 0.7rem;
     }
+
+    .header-main-content {
+        width: 100%;
+    }
 }
 
 main {
@@ -96,13 +100,14 @@ main {
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 3840px;
 }
 
-/* 3072px body margin; */
-
-.image-container {
+.main-image-container {
     width: 100%;
 }
 
@@ -110,9 +115,34 @@ main {
     width: 100%;
 }
 
-.text-container {
+.main-content {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: center;
+    width: 80%;
+    max-width: 3072px;
     margin-top: 2rem;
+}
+
+.separator {
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #00796B;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
 }

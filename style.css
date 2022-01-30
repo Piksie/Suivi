@@ -194,6 +194,22 @@ a.footer-link:hover {
     color: #00796B;
 }
 
-.footer-social-container {
+.social-icons {
     display: flex;
+    justify-content: end;
+}
+
+.footer-social-container > h3 {
+    text-align: right;
+}
+
+.social-icons > img {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons > img:last-child {
+    margin: 0;
+    margin-top: 0.5rem;
 }

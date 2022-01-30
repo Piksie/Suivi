@@ -75,10 +75,6 @@ a.nav-button {
 }
 
 a.nav-button:hover {
-    background-color: #26A69A;
-}
-
-a.nav-button.scroll:hover {
     background-color: #00796B;
 }
 
@@ -192,6 +188,10 @@ footer {
 
 .footer-link > p {
     margin: 0.5;
+}
+
+a.footer-link:hover {
+    color: #00796B;
 }
 
 .footer-social-container {

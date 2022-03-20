@@ -4,8 +4,6 @@
 // document.documentElement for IE and Mozilla
 
 let headerScroll = document.getElementById("header-container");
-let headerNavBtn = document.getElementById("a.nav-button");
-
 
 
 window.onscroll = () => {

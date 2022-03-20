@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../the_odin_project/js_foundations"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Suivi"
+	}
+}

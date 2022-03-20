@@ -66,7 +66,7 @@ html, body {
     margin: 0;
 }
 
-a.nav-button {
+.nav-button {
     color: #FFFFFF;
     text-decoration: none;
     padding: 1rem;
@@ -74,7 +74,7 @@ a.nav-button {
     transition: 0.2s;
 }
 
-a.nav-button:hover {
+.nav-button:hover {
     background-color: #00796B;
 }
 
@@ -113,6 +113,7 @@ main {
 
 .main-image-container {
     width: 100%;
+    margin-bottom: 3rem;
 }
 
 .main-image {
@@ -123,32 +124,49 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
     max-width: 3072px;
-    margin-top: 2rem;
 }
 
-.separator {
-    height: 3rem;
-    width: 3rem;
-    margin-bottom: 2rem;
+article {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: #f1f2f2;
+    margin-bottom: 3rem;
+}
+
+.width-container {
+    display: flex;
+    width: 80%;
+}
+
+.article-img-container {
+    flex: 1;
+}
+
+.article-text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
 }
 
 h1 {
-    text-align: center;
-    color: #00796B;
+    color: #231f20;
     font-size: 28px;
     font-weight: bold;
     margin: 0;
     padding: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
-    text-align: center;
-    font-size: 21px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -158,9 +176,16 @@ h3 {
     color: #231f20;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
 footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #f1f2f2;
     width: 100%;
 }
@@ -168,6 +193,7 @@ footer {
 .footer-container {
     display: flex;
     width: 80%;
+    max-width: 3072px;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -212,4 +238,9 @@ a.footer-link:hover {
 .social-icons > img:last-child {
     margin: 0;
     margin-top: 0.5rem;
+}
+
+.footer-copyright > p {
+    font-size: 12px;
+    color: #a8a8a8;
 }

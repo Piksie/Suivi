@@ -209,13 +209,17 @@ footer {
     margin-right: 10rem;
 }
 
+.footer-links-column > h3 {
+    margin-bottom: 1.5rem;
+}
+
 .footer-link {
     text-decoration: none;
     color: #231f20;
 }
 
 .footer-link > p {
-    margin: 0.5;
+    margin-bottom: 1rem;
 }
 
 a.footer-link:hover {

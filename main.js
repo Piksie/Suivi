@@ -5,7 +5,6 @@
 
 let headerScroll = document.getElementById("header-container");
 
-
 window.onscroll = () => {
     if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
         headerScroll.classList.add("header-scroll");
@@ -13,3 +12,4 @@ window.onscroll = () => {
         headerScroll.classList.remove("header-scroll");
     }
 };  
+

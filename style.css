@@ -53,7 +53,6 @@ p {
     transition: 0.5s ease-out;
 }
 
-
 .header-scroll {
     background-color: #26A69A;
     transition: 0.5s ease-in;
@@ -112,13 +111,13 @@ p {
     background-color: #00796B;
 }
 
-.nav-button:active {
+.nav-button.active {
     background-color: #00796B;
 }
 
 /* Navigation media query */
 
-@media only screen and (min-width: 200px) and (max-width: 600px) {
+@media only screen and (min-width: 200px) and (max-width: 480px) {
     .nav-button {
         display: none;
     }
@@ -206,11 +205,10 @@ figure {
     justify-content: center;
     align-items: center;
 }
-
-.button-container {
+/* .button-container {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
     margin-top: 1.5rem;
 }
 
@@ -228,7 +226,7 @@ figure {
     background-color: #231f2070;
     color: #231f20;
     transition: 0.2s;
-}
+} */
 
 .article-button-text {
     font-size: 12px;

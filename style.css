@@ -279,7 +279,7 @@ figure {
     }
 
     .article-ekipa-profile {
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.5  rem;
     }
 
     .article-ekipa-profile:last-child {
@@ -390,7 +390,46 @@ a.footer-link:hover {
     margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 830px) {
+@media only screen and (min-width: 650px) and (max-width: 830px) {
+    h3 {
+        padding-bottom: 0;
+        text-align: left;
+    }
+
+    .footer-link > p {
+        text-align: left;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links-container {
+        order: 2;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-links-column {
+        margin-right: 0;
+    }
+
+    .footer-social-container {
+        order: 1;
+        margin-bottom: 3rem;
+    }
+
+    .footer-social-container > h3 {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 0.2rem;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 650px) {
     h3 {
         padding-bottom: 0;
         text-align: center;
@@ -402,20 +441,28 @@ a.footer-link:hover {
 
     .footer-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .footer-links-container {
-        flex-direction: column;
+        flex: 1;
         order: 2;
+        flex-direction: column;
         align-items: center;
     }
 
     .footer-links-column {
         margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .footer-links-column:last-child {
+        margin-bottom: 0;
     }
 
     .footer-social-container {
         order: 1;
+        margin-bottom: 3rem;
     }
 
     .footer-social-container > h3 {
@@ -424,5 +471,6 @@ a.footer-link:hover {
 
     .social-icons {
         justify-content: center;
+        margin-top: 0.2rem;
     }
 }

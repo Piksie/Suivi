@@ -254,6 +254,11 @@ figure {
     align-items: center;
 }
 
+.ekipa-profile-img {
+    width: 113px;
+    height: 113px;
+}
+
 .ekipa-profile-name {
     font-size: 16px;
     font-weight: bold;
@@ -262,16 +267,24 @@ figure {
 }
 
 .ekipa-profile-position {
-    font-size: 14px;
-    color: #494949;
+    margin-top: 0.2rem;
+    font-size: 12px;
+    color: #666666;
     text-align: center;
 }
 
-.ekipa-profile-info {
-    font-size: 12px;
-    color: #494949;
-    text-align: center;
-    margin-top: 1rem;
+@media only screen and (min-width: 200px) and (max-width: 830px) {
+    .width-container-profiles {
+        flex-direction: column;
+    }
+
+    .article-ekipa-profile {
+        margin-bottom: 2.5rem;
+    }
+
+    .article-ekipa-profile:last-child {
+        margin-bottom: 0;
+    }
 }
 
 h1 {

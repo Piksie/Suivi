@@ -6,6 +6,7 @@ html, body {
      font-size: 14px;
      color: #231f20;
      scroll-behavior: smooth;
+     image-rendering: pixelated;
 }
 
 #header-container {
@@ -79,6 +80,10 @@ html, body {
     background-color: #00796B;
 }
 
+.nav-button:active {
+    background-color: #00796B;
+}
+
 .nav-mobile {
     display: none;
 }
@@ -114,29 +119,39 @@ main {
 
 .main-image-container {
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem;        
 }
 
 .main-image {
     width: 100%;
 }
 
-#main-content-container {
+.main-content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 3072px;
-    scroll-margin-top: 5rem;    
+    max-width: 3072px;   
 }
 
 article {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 300px;
     background-color: #f1f2f2;
     margin-bottom: 3rem;
+}
+
+#predstavitev {
+    scroll-margin-top: 3rem; 
+}
+
+#izdelki {
+    scroll-margin-top: 3rem; 
+}
+
+#ekipa {
+    scroll-margin-top: 3rem; 
 }
 
 .width-container {
@@ -144,8 +159,38 @@ article {
     width: 80%;
 }
 
+@media only screen and (min-width: 200px) and (max-width: 830px) {
+    .width-container {
+        flex-direction: column;
+    }
+
+    .article-text-container {
+        order: 1;
+        margin-top: 3rem;
+    }
+
+    .article-img-container {
+        order: 2;
+    }
+}
+
 .article-img-container {
     flex: 1;
+    justify-content: center;
+}
+
+figure {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
 }
 
 .article-text-container {
@@ -153,22 +198,98 @@ article {
     flex-direction: column;
     flex: 1;
     justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 1.5rem;
+}
+
+.article-button {
+    padding: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    background-color: #231f20;
+    color:#f1f2f2;
+    text-decoration: none;
+}
+
+.article-button:hover {
+    background-color: #231f2070;
+    color: #231f20;
+    transition: 0.2s;
+}
+
+.article-button-text {
+    font-size: 12px;
+}
+
+.article-text-container-ekipa {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.article-ekipa-profiles-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.width-container-profiles {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.article-ekipa-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ekipa-profile-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.ekipa-profile-position {
+    font-size: 14px;
+    color: #494949;
+    text-align: center;
+}
+
+.ekipa-profile-info {
+    font-size: 12px;
+    color: #494949;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 h1 {
     color: #231f20;
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
     margin: 0;
     padding: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 28px;
+    text-align: center;
     margin: 0;
     padding: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
@@ -181,6 +302,9 @@ h3 {
 p {
     margin: 0;
     padding: 0;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 16px;
 }
 
 
@@ -220,6 +344,7 @@ footer {
 
 .footer-link > p {
     margin-bottom: 1rem;
+    text-align: left; 
 }
 
 a.footer-link:hover {
@@ -249,4 +374,42 @@ a.footer-link:hover {
 .footer-copyright > p {
     font-size: 12px;
     color: #a8a8a8;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 830px) {
+    h3 {
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .footer-link > p {
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links-container {
+        flex-direction: column;
+        order: 2;
+        align-items: center;
+    }
+
+    .footer-links-column {
+        margin-right: 0;
+    }
+
+    .footer-social-container {
+        order: 1;
+    }
+
+    .footer-social-container > h3 {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
